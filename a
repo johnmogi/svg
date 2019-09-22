@@ -59,3 +59,17 @@
 // function stopStuff() {
 //     clearInterval(interval);
 // }
+
+
+// almoist
+
+  var elem = document.getElementById("geneteBut");
+
+  if (elem.value=="Stop"){
+    elem.value = "Start";
+    clearInterval(setInterval);
+    console.log(this)
+  } 
+  else {  elem.value = "Stop";
+  setInterval(generate, 100);
+  }
